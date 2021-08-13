@@ -1,0 +1,107 @@
+{
+  "S:Envelope": {
+    "$": {
+      "xmlns:S": "http://schemas.xmlsoap.org/soap/envelope/",
+      "xmlns:SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/"
+    },
+    "SOAP-ENV:Header": [
+      {
+        "wsse:Security": [
+          {
+            "$": {
+              "xmlns:wsse": "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd",
+              "xmlns:wsu": "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+            },
+            "ds:Signature": [
+              {
+                "$": { "xmlns:ds": "http://www.w3.org/2000/09/xmldsig#" },
+                "ds:SignedInfo": [
+                  {
+                    "ds:CanonicalizationMethod": [{ "$": { "Algorithm": "http://www.w3.org/2001/10/xml-exc-c14n#" } }],
+                    "ds:SignatureMethod": [
+                      { "$": { "Algorithm": "http://www.w3.org/2001/04/xmldsig-more#gost34310-gost34311" } }
+                    ],
+                    "ds:Reference": [
+                      {
+                        "$": { "URI": "#id-399863dc-0425-43b4-8928-fc70c04282de" },
+                        "ds:Transforms": [
+                          { "ds:Transform": [{ "$": { "Algorithm": "http://www.w3.org/2001/10/xml-exc-c14n#" } }] }
+                        ],
+                        "ds:DigestMethod": [
+                          { "$": { "Algorithm": "http://www.w3.org/2001/04/xmldsig-more#gost34311" } }
+                        ],
+                        "ds:DigestValue": ["hUeWlqhWz5IWrGdo/TrffAkcSfntFOWz89TXAkbunlQ="]
+                      }
+                    ]
+                  }
+                ],
+                "ds:SignatureValue": [
+                  "\r\nD3DXsR1vwpe/0TXUH/5QfQG5ON1ZZ8EJ2KDGgPOVzDEC/0FZwraUxKZKaysFJ5ZxIiIGHetAh5ty\r\nod+xQAQWYA==\r\n"
+                ],
+                "ds:KeyInfo": [
+                  {
+                    "wsse:SecurityTokenReference": [
+                      {
+                        "wsse:KeyIdentifier": [
+                          {
+                            "_": "MIIFZTCCBQ+gAwIBAgIUceSXM9BTWLZ3/5ApswOC5i82OIowDQYJKoMOAwoBAQECBQAwUzELMAkGA1UEBhMCS1oxRDBCBgNVBAMMO9Kw0JvQotCi0KvSmiDQmtCj05jQm9CQ0J3QlNCr0KDQo9Co0Ksg0J7QoNCi0JDQm9Cr0pogKEdPU1QpMB4XDTIwMDIyNzExMjEyM1oXDTIxMDIyNjExMjEyM1owggIPMSQwIgYDVQQDDBvQldCh0JbQkNCd0J7QkiDQndCj0KDQm9CQ0J0xFzAVBgNVBAQMDtCV0KHQltCQ0J3QntCSMRgwFgYDVQQFEw9JSU44MjA1MjMzMDIyMDkxCzAJBgNVBAYTAktaMRUwEwYDVQQHDAzQkNCa0KLQntCR0JUxIjAgBgNVBAgMGdCQ0prQotOo0JHQlSDQntCR0JvQq9Ch0KsxggEzMIIBLwYDVQQKDIIBJiLQkNKa0KLTqNCR0JUg0prQkNCb0JDQm9Cr0pog0JbQldCgINKa0JDQotCr0J3QkNCh0KLQkNCg0KssINCh05jQo9Cb0JXQoiDQltOY0J3QlSDSmtCQ0JvQkCDSmtKw0KDQq9Cb0KvQodCrINCR06jQm9CG0JzQhiIg0JzQldCc0JvQldCa0JXQotCi0IbQmiDQnNCV0JrQldCc0JXQodCG0J3QhtKiICLQkNKa0KLTqNCR0JUg0prQkNCb0JAg0prSsNCg0KvQm9Cr0KHQqyDQnNCe0J3QmNCi0J7QoNCY0J3Qk9CGIiDQmtCe0JzQnNCj0J3QkNCb0JTQq9KaINCc0JXQnNCb0JXQmtCV0KLQotCG0Jog0JzQldCa0JXQnNCV0KHQhjEYMBYGA1UECwwPQklOMTUxMjQwMDE4ODc0MRswGQYDVQQqDBLQnNCj0KDQkNCi0J7QktCY0KcwbDAlBgkqgw4DCgEBAQEwGAYKKoMOAwoBAQEBAQYKKoMOAwoBAwEBAANDAARABb04VaeXslG/YZYkEoRwoQlsFdBs9mbIcsWEyJUaQlJiLuYXkeh6hbuIkbJaEDdEouXhEpw+2eA9NakI6Z2iK6OCAeswggHnMA4GA1UdDwEB/wQEAwIGwDAoBgNVHSUEITAfBggrBgEFBQcDBAYIKoMOAwMEAQIGCSqDDgMDBAECATAPBgNVHSMECDAGgARbanPpMB0GA1UdDgQWBBRSMQAL2/djupctjXKuVlfuvzlYOjBeBgNVHSAEVzBVMFMGByqDDgMDAgEwSDAhBggrBgEFBQcCARYVaHR0cDovL3BraS5nb3Yua3ovY3BzMCMGCCsGAQUFBwICMBcMFWh0dHA6Ly9wa2kuZ292Lmt6L2NwczBYBgNVHR8EUTBPME2gS6BJhiJodHRwOi8vY3JsLnBraS5nb3Yua3ovbmNhX2dvc3QuY3JshiNodHRwOi8vY3JsMS5wa2kuZ292Lmt6L25jYV9nb3N0LmNybDBcBgNVHS4EVTBTMFGgT6BNhiRodHRwOi8vY3JsLnBraS5nb3Yua3ovbmNhX2RfZ29zdC5jcmyGJWh0dHA6Ly9jcmwxLnBraS5nb3Yua3ovbmNhX2RfZ29zdC5jcmwwYwYIKwYBBQUHAQEEVzBVMC8GCCsGAQUFBzAChiNodHRwOi8vcGtpLmdvdi5rei9jZXJ0L25jYV9nb3N0LmNlcjAiBggrBgEFBQcwAYYWaHR0cDovL29jc3AucGtpLmdvdi5rejANBgkqgw4DCgEBAQIFAANBAF6sVfUTjZSbOnu5eICeDKhGU2BhJdaNxWwaIc3NSC0zZdkyhsK60iZqI1a1vBfgyZawvCd1eRDDoy37DZl116Q=",
+                            "$": {
+                              "EncodingType": "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary",
+                              "ValueType": "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "S:Body": [
+      {
+        "$": {
+          "xmlns:wsu": "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd",
+          "wsu:Id": "id-399863dc-0425-43b4-8928-fc70c04282de"
+        },
+        "ns2:sendMessage": [
+          {
+            "$": { "xmlns:ns2": "http://bip.bee.kz/AsyncChannel/v10/Types" },
+            "request": [
+              {
+                "$": { "xmlns": "" },
+                "messageInfo": [
+                  {
+                    "messageId": ["a3b37169-5f94-47b8-b0eb-8a6eb704ae84"],
+                    "correlationId": ["Correlation Id here"],
+                    "serviceId": ["get_app_ZU_egov_Aktobe"],
+                    "messageType": ["NOTIFICATION"],
+                    "messageDate": ["2020-07-23T16:25:08.467+06:00"],
+                    "sender": [{ "senderId": ["Geoportal_A"], "password": ["GeoportalA"] }]
+                  }
+                ],
+                "messageData": [
+                  {
+                    "data": [
+                      {
+                        "_": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<responseMessage xmlns:ns2=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:ns3=\"http://newshep.get_app_ZU_egov_Aktobe.egov.kz\">\r\n    <ns3:SystemInfo>\r\n        <ns3:RequestNumber>10000000000000004513</ns3:RequestNumber>\r\n        <ns3:ChainId>10000000000000004513</ns3:ChainId>\r\n        <ns3:RequestDate>2020-07-23T16:25:08.477+06:00</ns3:RequestDate>\r\n    </ns3:SystemInfo>\r\n    <ns3:ResponseData>\r\n        <ns3:RequestNumber>request number here</ns3:RequestNumber>\r\n        <ns3:CurrentStatus>001</ns3:CurrentStatus>\r\n        <ns3:CurrentStatusText>Заявка Успешна создана</ns3:CurrentStatusText>\r\n    </ns3:ResponseData>\r\n</responseMessage>\r\n",
+                        "$": {
+                          "xmlns:xs": "http://www.w3.org/2001/XMLSchema",
+                          "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                          "xsi:type": "xs:string"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
